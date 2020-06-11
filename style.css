@@ -2,4 +2,13 @@ body {
   background-color: #a7a1a1;
 }
 
+img {
+  height: 132px;
+  width: 200px;
+}
+
+section {
+  margin-top: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
