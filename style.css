@@ -69,7 +69,7 @@ main > header {
 main > header p {
   font-size: 30px;
 }
-main section {
+main .teddies, main #produit_teddies, main #formulaire {
   border-radius: 50px;
   background-color: #f3dbab;
   box-shadow: 0 0 10px black;
@@ -130,6 +130,12 @@ main section {
 }
 #produit section select {
   background-color: #f2eadb;
+  color: black;
+  font-size: 15px;
+  border: solid 3px black;
+}
+#produit section select option {
+  background-color: #f2eadb;
 }
 #produit section #liens_produit {
   display: flex;
@@ -152,27 +158,73 @@ main section {
   border-radius: 50px;
 }
 
-#panier #formulaire {
+#page_panier #panier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#page_panier #panier h1 {
+  font-size: 35px;
+  color: #508066;
+  width: 100%;
+}
+#page_panier #panier article {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3dbab;
+  border-radius: 0px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  height: 100px;
+  font-size: 35px;
+  box-shadow: 0 0 10px black;
+}
+#page_panier #panier article h2 {
+  font-size: 35px;
+}
+#page_panier #panier article img {
+  height: 100px;
+}
+#page_panier #panier button {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5px;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  background-color: #508066;
+  border: solid 2px #3c614d;
+  color: white;
+}
+#page_panier #panier button:focus {
+  border: none;
+  outline: none;
+}
+#page_panier #formulaire {
   width: 70%;
   margin-bottom: 100px;
   font-size: 30px;
 }
-#panier #formulaire label {
+#page_panier #formulaire label {
   color: black;
   margin-right: 30px;
   font-size: 30px;
   width: 30%;
 }
-#panier #formulaire input {
+#page_panier #formulaire input {
   width: 70%;
   font: 25px "arial";
 }
-#panier #formulaire div {
+#page_panier #formulaire div {
   margin: 40px;
   display: flex;
   justify-content: center;
 }
-#panier #formulaire button {
+#page_panier #formulaire button {
   margin-bottom: 30px;
   background-color: #508066;
   color: white;
@@ -182,7 +234,7 @@ main section {
   width: 60%;
   height: 30px;
 }
-#panier #formulaire button:focus {
+#page_panier #formulaire button:focus {
   border: none;
   outline: none;
 }
@@ -192,6 +244,17 @@ main section {
   width: 60%;
   margin: auto;
   font-size: 25px;
+  margin-bottom: 50px;
+}
+#mentions header {
+  color: black;
+  width: 90%;
+}
+#mentions section {
+  background-color: #f2eadb;
+  box-shadow: none;
+  border-radius: 0px;
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */
