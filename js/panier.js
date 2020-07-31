@@ -60,20 +60,28 @@ function formulaire() {
 
 let form = document.getElementById("form")
 
-let myInit = { 
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    mode: 'cors',
-    body: formulaire()
-};
-
 form.addEventListener("submit", function(e) {
+
+    let myInit = { 
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        mode: 'cors',
+        body: formulaire()
+    };
+
     e.preventDefault()
-    fetch('http://localhost:3000/api/teddies/order',myInit)
-    .then(function(response) {
-        alert(response)  
-        console.log(response)  
-    }) 
+
+    if(localStorage.length != 0) {
+        fetch('http://localhost:3000/api/teddies/order',myInit)
+        .then(response => response.json()).then(function(response) {
+            alert("Votre commande a bien était prise en compte !")  
+            localStorage.setItem("commande",response.orderId)
+            window.location.href = 'confirmation.html';
+        }) 
+    } else {
+        alert("Votre panier est vide")
+        window.location.href = '../index.html';
+    }
 })
 
 

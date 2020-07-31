@@ -304,7 +304,7 @@ main .teddies, main #produit_teddies, main #formulaire {
   border: none;
   outline: none;
 }
-@media (max-width: 599px) {
+@media (max-width: 799px) {
   #page_panier #panier {
     margin-bottom: 50px;
   }
@@ -349,6 +349,111 @@ main .teddies, main #produit_teddies, main #formulaire {
   }
   #page_panier #formulaire div {
     margin: 20px;
+  }
+}
+
+#confirmation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#confirmation #recap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#confirmation #recap h1 {
+  font-size: 35px;
+  color: #508066;
+  width: 100%;
+}
+#confirmation #recap #quantite {
+  margin-right: 10px;
+}
+#confirmation #recap article {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3dbab;
+  border-radius: 0px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 15px;
+  height: 100px;
+  font-size: 35px;
+  box-shadow: 0 0 10px black;
+}
+#confirmation #recap article h2 {
+  font-size: 35px;
+}
+#confirmation #recap article img {
+  height: 100px;
+}
+#confirmation #total {
+  font-size: 35px;
+  text-align: center;
+  width: 200px;
+  background-color: #f3dbab;
+  border-radius: 5px;
+  border: solid 2px #3c614d;
+  color: black;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#confirmation #commande {
+  text-align: center;
+}
+#confirmation #commande p {
+  font-size: 30px;
+  color: black;
+}
+#confirmation footer {
+  margin-bottom: 100px;
+  background-color: #508066;
+  border: solid 2px #3c614d;
+  border-radius: 50px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+}
+#confirmation footer:focus {
+  border: none;
+  outline: none;
+}
+#confirmation footer a {
+  color: white;
+  font-size: 25px;
+}
+@media (max-width: 799px) {
+  #confirmation header {
+    font-size: 15px;
+  }
+  #confirmation #commande p {
+    font-size: 20px;
+  }
+  #confirmation #recap {
+    margin-bottom: 50px;
+    font-size: 15;
+  }
+  #confirmation #recap #total {
+    font-size: 20px;
+    width: 150px;
+  }
+  #confirmation #recap article {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+    height: 60px;
+    font-size: 15px;
+    box-shadow: 0 0 5px black;
+  }
+  #confirmation #recap article h2 {
+    font-size: 15px;
+  }
+  #confirmation #recap article img {
+    height: 60px;
   }
 }
 

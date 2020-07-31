@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Merci pour votre commande - Orinico</title>
     <link href="../images/logo.png" rel="shortcut icon">
     <script src="https://kit.fontawesome.com/0c7937f838.js" crossorigin="anonymous"></script>
@@ -15,12 +15,29 @@
             <a href="panier.html" title="lien vers le panier" id="panier"><i class="fas fa-cart-arrow-down"></i><span>Mon panier</span></a>
         </header>
         <main id="confirmation">
+            <header>
+                <h1>Merci pour votre commande !</h1>
+                <p>Récapitulatif :</p>
+            </header>
+            <section id="confirmation">
 
+                <div id="recap"></div>
+                <p id="total"></p>
+
+                <div id="commande">
+                    <p>Votre identifiant de commande est le: </p>
+                </div>
+            </section>
+            <footer>
+                <a href="../index.html" id="retour">Retour à l'accueil.</a>
+            </footer>
         </main>
         <footer>
             <h2>Copyright © 2019 - 2020 | Orinoco</h2>
             <a href="html/mentions.html">Mentions légales</a>
         </footer>
     </div>
+
+    <script src="../js/confirmation.js"></script>
 </body>
 </html>
