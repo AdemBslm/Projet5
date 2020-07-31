@@ -50,6 +50,18 @@ body {
 #container > footer a {
   color: black;
 }
+@media (max-width: 599px) {
+  #container > header {
+    height: 70px;
+    font-size: 25px;
+  }
+  #container > footer {
+    height: 70px;
+  }
+  #container > footer h2, #container > footer a {
+    font-size: 15px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -114,6 +126,28 @@ main .teddies, main #produit_teddies, main #formulaire {
 #index .teddies:hover {
   transform: scale(1.1);
 }
+@media (max-width: 599px) {
+  #index header {
+    width: 80%;
+  }
+  #index header h1, #index header p {
+    font-size: 15px;
+  }
+  #index .teddies {
+    width: 75%;
+    margin: 25px 0 25px 0;
+  }
+  #index .teddies img {
+    width: 100%;
+    height: 75%;
+  }
+  #index .teddies #texte_section {
+    font-size: 15px;
+  }
+  #index .teddies:hover {
+    transform: none;
+  }
+}
 
 #produit section {
   width: 80%;
@@ -157,6 +191,29 @@ main .teddies, main #produit_teddies, main #formulaire {
 #produit section button a {
   border-radius: 50px;
 }
+@media (max-width: 599px) {
+  #produit header {
+    width: 80%;
+  }
+  #produit header h1, #produit header p {
+    font-size: 15px;
+  }
+  #produit section {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+  #produit section h2 {
+    font-size: 30px;
+  }
+  #produit section select {
+    font-size: 10px;
+  }
+  #produit section button {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
 
 #page_panier #panier {
   display: flex;
@@ -171,12 +228,36 @@ main .teddies, main #produit_teddies, main #formulaire {
   color: #508066;
   width: 100%;
 }
+#page_panier #panier #total {
+  font-size: 35px;
+  width: 200px;
+  background-color: #f3dbab;
+  border-radius: 5px;
+  border: solid 2px #3c614d;
+  color: black;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#page_panier #panier #effacer {
+  background-color: #db0303;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: solid 1px black;
+}
+#page_panier #panier #effacer:focus {
+  border: none;
+  outline: none;
+}
+#page_panier #panier #quantite {
+  margin-right: 10px;
+}
 #page_panier #panier article {
   display: flex;
   justify-content: space-between;
   background-color: #f3dbab;
   border-radius: 0px;
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-bottom: 15px;
   height: 100px;
@@ -188,21 +269,6 @@ main .teddies, main #produit_teddies, main #formulaire {
 }
 #page_panier #panier article img {
   height: 100px;
-}
-#page_panier #panier button {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 5px;
-  border-radius: 50px;
-  height: 30px;
-  width: 30px;
-  background-color: #508066;
-  border: solid 2px #3c614d;
-  color: white;
-}
-#page_panier #panier button:focus {
-  border: none;
-  outline: none;
 }
 #page_panier #formulaire {
   width: 70%;
@@ -238,6 +304,53 @@ main .teddies, main #produit_teddies, main #formulaire {
   border: none;
   outline: none;
 }
+@media (max-width: 599px) {
+  #page_panier #panier {
+    margin-bottom: 50px;
+  }
+  #page_panier #panier h1 {
+    font-size: 15;
+  }
+  #page_panier #panier #total {
+    font-size: 20px;
+    width: 150px;
+  }
+  #page_panier #panier article {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+    height: 60px;
+    font-size: 15px;
+    box-shadow: 0 0 5px black;
+  }
+  #page_panier #panier article h2 {
+    font-size: 15px;
+  }
+  #page_panier #panier article img {
+    height: 60px;
+  }
+  #page_panier #formulaire {
+    width: 90%;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  #page_panier #formulaire h2 {
+    font-size: 20px;
+  }
+  #page_panier #formulaire label {
+    margin-right: 30px;
+    font-size: 15px;
+    width: 30%;
+  }
+  #page_panier #formulaire input {
+    width: 70%;
+    height: 20px;
+    font-size: 15px;
+  }
+  #page_panier #formulaire div {
+    margin: 20px;
+  }
+}
 
 #mentions {
   text-align: center;
@@ -255,6 +368,17 @@ main .teddies, main #produit_teddies, main #formulaire {
   box-shadow: none;
   border-radius: 0px;
   width: 90%;
+}
+@media (max-width: 599px) {
+  #mentions {
+    width: 80%;
+  }
+  #mentions header p {
+    font-size: 15px;
+  }
+  #mentions section {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

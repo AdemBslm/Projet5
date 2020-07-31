@@ -15,31 +15,33 @@
         <main id="page_panier">
             <section id="panier">
                 <h1>Voici votre panier !</h1>
+                <p id="total"></p>
+                <p>Effacer le panier <button id="effacer">X</button></p>
             </section>
             <section id="formulaire">
                 <h2>Veuillez remplir le formulaire.</h2>
-                <form>
+                <form id="form">
                     <div>
-                        <label for="name">Prénom :</label>
-                        <input>
+                        <label for="firstName">Prénom :</label>
+                        <input id="firstName" required pattern="[a-zA-Zà-ÿÀ-Ÿ-]+">
                     </div>
                     <div>
-                        <label for="name">Nom :</label>
-                        <input>
+                        <label for="lastName">Nom :</label>
+                        <input id="lastName" required pattern="[a-zA-Zà-ÿÀ-Ÿ-]+">
                     </div>
                     <div>
-                        <label for="adress">Adresse :</label>
-                        <input>
+                        <label for="address">Adresse :</label>
+                        <input id="address" required pattern="[0-9a-zA-Zà-ÿÀ-Ÿ-\s]+">
                     </div>
                     <div>
                         <label for="city">Ville :</label>
-                        <input>
+                        <input id="city" required pattern="[a-zA-Zà-ÿÀ-Ÿ-\s]+">
                     </div>
                     <div>
                         <label for="mail">E-mail :</label>
-                        <input>
+                        <input id="mail" type="email" required>
                     </div>
-                    <button>Envoyez</button>
+                    <button id="envoyez">Envoyez</button>
                 </form>
             </section>
         </main>
@@ -50,6 +52,5 @@
     </div>
 
     <script src="../js/panier.js"></script>
-
 </body>
 </html>
