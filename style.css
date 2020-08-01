@@ -309,7 +309,7 @@ main .teddies, main #produit_teddies, main #formulaire {
     margin-bottom: 50px;
   }
   #page_panier #panier h1 {
-    font-size: 15;
+    font-size: 15px;
   }
   #page_panier #panier #total {
     font-size: 20px;
@@ -356,6 +356,9 @@ main .teddies, main #produit_teddies, main #formulaire {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+#confirmation section {
+  width: 100%;
 }
 #confirmation #recap {
   display: flex;
@@ -435,7 +438,7 @@ main .teddies, main #produit_teddies, main #formulaire {
   }
   #confirmation #recap {
     margin-bottom: 50px;
-    font-size: 15;
+    font-size: 15px;
   }
   #confirmation #recap #total {
     font-size: 20px;
